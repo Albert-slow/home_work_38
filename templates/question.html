@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/homeuser.css') }}">
+    <meta charset="UTF-8">
+    <title>Questions add</title>
+</head>
+<body>
+<h1>Add questions</h1>
+<form method="post">
+    <input action="/" type="text" name="question"><br>
+    <button type="submit" placeholder="Напишите вопрос...">Добавить</button><br>
+</form>
+<h1>Вопросы:</h1>
+{{ questions }}
+</body>
+</html>
